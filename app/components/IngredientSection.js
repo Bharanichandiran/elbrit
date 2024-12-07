@@ -1,7 +1,6 @@
 import styles from '../styles/IngredientSection.module.scss';
 import Image from 'next/image';
 import ing from '../images/Blogs.png';
-import ing1 from '../images/ing1.png';
 export default function IngredientsAndNews() {
   const ingredients = [
     {
@@ -48,7 +47,7 @@ export default function IngredientsAndNews() {
         <h2>Latest News</h2>
         <div className={styles.newsGrid}>
           
-        <Image src={ing}  />
+        <Image src={ing} alt={'img'}  />
         </div>
       </section>
     </div>

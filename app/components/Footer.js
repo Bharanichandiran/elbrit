@@ -4,7 +4,7 @@ import Group from '../images/Group 1.png';
 export default function Footer() {
   return (
     <footer >
-    <Image src={Group}  />
+    <Image src={Group} alt={'img'}  />
     </footer>
   );
 }
