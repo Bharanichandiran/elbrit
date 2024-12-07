@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[functions]
+  directory = "./functions"
+
+# Redirects
+[[redirects]]
+  from = "/old-path/*"
+  to = "/new-path/*"
+  status = 301
+
+# Headers
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    "Cache-Control" = "max-age=31536000, immutable"
